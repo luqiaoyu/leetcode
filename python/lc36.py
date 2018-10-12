@@ -1,5 +1,6 @@
 # 36. Valid Sudoku
 
+# hash table: 68ms
 class Solution:
     def isValidSudoku(self, board):
         """
