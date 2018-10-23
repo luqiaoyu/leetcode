@@ -31,4 +31,19 @@ class Solution:
                 x1, y1 = - y2 + mx0, x2
             matrix[x2][y2] = temp
 
+# 顺时针旋转矩阵，等价于先上下翻转，再取转置
+# 逆时针旋转矩阵，等价于先左右翻转，再取转置
+# 36ms
+class Solution1:
+    def rotate(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: void Do not return anything, modify matrix in-place instead.
+        """
+        matrix.reverse()
+        n = len(matrix)
+        for i in range(n):
+            for j in range(i + 1, len(matrix[i])):
+                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+
 
