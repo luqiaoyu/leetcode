@@ -1,8 +1,5 @@
 package lc52;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Created by luqiaoyu on 2018/10/29.
  * 52. N-Queens II
