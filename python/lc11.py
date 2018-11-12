@@ -15,7 +15,7 @@ class Solution:
             area = max(area, (right - left) * low)
 
             if height[left] < height[right]:
-                while (height[left] <= low and left <= right):
+                while (height[left] <= low and left <= right):    # 用了while循环，注意不要超过边界
                     left += 1
             else:
                 while (height[right] <= low and right >= left):
