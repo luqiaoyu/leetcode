@@ -6,7 +6,7 @@ class ListNode:
         self.val = x
         self.next = None
 
-# 56ms
+# 56ms 45%
 class Solution:
     def rotateRight(self, head, k):
         """
