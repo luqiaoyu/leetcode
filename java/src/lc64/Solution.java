@@ -2,7 +2,7 @@ package lc64;
 
 /**
  * 64. Minimum Path Sum
- * 7ms 35.24%
+ * 7ms 35.24% O(m*n)
  */
 public class Solution {
     public int minPathSum(int[][] grid) {
