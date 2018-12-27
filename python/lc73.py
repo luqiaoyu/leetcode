@@ -63,6 +63,7 @@ class Solution1:
             else:
                 matrix[i][j] = 'x'
 
+# time O(mn); space O(1)
 # 152ms 25.02%
 class Solution2:
     def setZeroes(self, matrix):
