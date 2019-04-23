@@ -21,6 +21,8 @@ class Solution:
             return
         else:
             for i in range(index, len(candidates)):
+                # 问题中without duplicates很关键，否则需要加上以下这一行
+                # if (i > index and candidates[i] == candidates[i - 1]): continue
                 temp.append(candidates[i])
                 self.backtrack(candidates, target - candidates[i], result, temp, i)
                 temp.pop()
@@ -44,4 +46,11 @@ class Solution1:
                         if not temp or i >= temp[-1]:
                             dp[t] += temp + [i],    # 一定要有这个逗号！不知道为什么，否则会报错
         return dp[target]
+
+if __name__ == '__main__':
+    candidates = [2,5,2,1,2]
+    target = 5
+    s = Solution()
+    result = s.combinationSum(candidates, target)
+    print(result)
 
